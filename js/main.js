@@ -547,7 +547,7 @@
         // idle: the lens drifts slowly over the face, so the effect reads even without a pointer
         idleT = inside ? 0 : idleT + dt;
         var tt = now / 1000;
-        if (!inside) { tx = 0.5 + Math.sin(tt * 0.33) * 0.24; ty = 0.42 + Math.sin(tt * 0.51 + 1.3) * 0.2; }
+        if (!inside) { tx = 0.5 + Math.sin(tt * 0.33) * 0.08; ty = 0.3 + Math.sin(tt * 0.51 + 1.3) * 0.06; }
         var k = inside ? 0.16 : (idleT < 1.5 ? 0.02 : 0.05);
         mx = lerp(mx, tx, k); my = lerp(my, ty, k);
         hover = lerp(hover, 1, 0.05);
