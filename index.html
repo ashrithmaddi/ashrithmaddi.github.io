@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maddi Ashrith — AI / ML Engineer &amp; Researcher</title>
+  <meta name="description" content="Portfolio of Maddi Ashrith — Computer Science (AI &amp; ML) student at VNR VJIET and PINNs research intern at Kellogg, Northwestern. Crowd-surge prediction, biometric payments, health digital twins and full-stack platforms.">
+  <meta name="theme-color" content="#ebebd8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maddi Ashrith — AI / ML Engineer &amp; Researcher">
+  <meta property="og:description" content="Physics-informed neural networks, crowd-surge prediction, biometric payments and full-stack AI products.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=EB+Garamond:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/_viz.css">
+  <link rel="stylesheet" href="css/extras.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__orbit" id="orbit"></div>
+    <div class="loader__meta"><span>Maddi Ashrith</span><span><b id="loaderCount">0</b>%</span></div>
+    <i class="loader__panel"></i><i class="loader__panel"></i><i class="loader__panel"></i><i class="loader__panel"></i><i class="loader__panel"></i>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="Back to top">MA<i></i></a>
+    <nav class="nav__pill" aria-label="Sections">
+      <span class="nav__ind" id="navInd"></span>
+      <a href="#top" data-sec="top">Home</a>
+      <a href="#about" data-sec="about">About</a>
+      <a href="#experience" data-sec="experience">Experience</a>
+      <a href="#work" data-sec="work">Projects</a>
+      <a href="#skills" data-sec="skills">Toolkit</a>
+      <a href="#beyond" data-sec="beyond">Honours</a>
+    </nav>
+    <div class="nav__social">
+      <a href="https://github.com/ashrithmaddi" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/ashrith-maddi" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+      <a class="nav__cta" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-theme="light">
+      <canvas class="hero__dots" id="dots" aria-hidden="true"></canvas>
+
+      <div class="hero__medal" data-depth="-0.45" aria-hidden="true">
+        <svg class="hero__ring" id="medalRing" viewBox="0 0 200 200">
+          <defs><path id="ringPath" d="M100 100m-91 0a91 91 0 1 1 182 0a91 91 0 1 1-182 0"/></defs>
+          <text><textPath href="#ringPath" textLength="568" lengthAdjust="spacing">Maddi Ashrith · AI / ML Engineer · Researcher · Hyderabad · Class of 2027 ·</textPath></text>
+        </svg>
+      </div>
+
+      <h1 class="hero__title" aria-label="Maddi Ashrith">
+        <span class="hero__line" data-depth="0.6"><span class="chars">Ashrith</span></span>
+        <span class="hero__line hero__line--fade" data-depth="1"><span class="chars">Maddi</span></span>
+      </h1>
+
+      <div class="hero__portrait" data-depth="-0.8">
+        <img src="assets/portrait.png" alt="Portrait of Maddi Ashrith" id="portraitImg">
+        <canvas id="portraitGl" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="hero__left fade">
+        <span class="label">AI / ML Engineer &amp; Researcher<br>CSE (AI &amp; ML) · Class of 2027</span>
+        <a class="round" href="#about" aria-label="Scroll to about" data-magnetic><span>↘</span></a>
+      </div>
+
+      <div class="hero__right fade">
+        <p class="label">I build machine learning that holds up outside the notebook, from the research paper to the product people use.</p>
+        <ul class="hero__roles" id="roles">
+          <li class="on">Machine Learning</li>
+          <li>Scientific ML · PINNs</li>
+          <li>Computer Vision</li>
+          <li>MERN Full-Stack</li>
+        </ul>
+      </div>
+
+      <div class="hero__foot fade">
+        <span><i class="live"></i>Open to opportunities</span>
+        <span>Research Intern · Kellogg, Northwestern</span>
+        <span>Hyderabad, India</span>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT — scroll-expanding stage ============ -->
+    <section class="expand" id="about" data-theme="dark">
+      <div class="expand__stage">
+        <div class="expand__word expand__word--l" aria-hidden="true">About</div>
+        <div class="expand__word expand__word--r" aria-hidden="true">Me</div>
+        <div class="expand__card" id="expandCard">
+          <canvas class="swirl" id="swirlAbout" aria-hidden="true"></canvas>
+          <div class="expand__shade"></div>
+        </div>
+        <div class="expand__content" id="expandContent">
+          <span class="label label--inv">I — About</span>
+          <p class="statement" data-scrub>
+            I'm a final-year Computer Science (AI &amp; ML) student at VNR VJIET who likes models that respect
+            the real world: neural networks that obey the laws of physics, vision systems that see a crowd surge
+            coming, and payments you authorise with nothing but your voice.
+          </p>
+        </div>
+        <span class="expand__hint label label--inv" id="expandHint">Keep scrolling</span>
+      </div>
+    </section>
+
+    <section class="more" data-theme="dark">
+      <div class="more__grid">
+        <figure class="more__photo reveal" data-tilt>
+          <div class="more__photo-in"><img src="assets/photo.jpg" alt="Maddi Ashrith" loading="lazy" data-parallax="0.08"></div>
+          <figcaption class="label label--inv"><span>Maddi Ashrith</span><span>HYD · IN</span></figcaption>
+        </figure>
+        <div class="more__text">
+          <h2 class="h2 h2--inv" data-split>Rigorous models, <em>real-world systems.</em></h2>
+          <div class="more__cols">
+            <div class="reveal">
+              <span class="label label--inv">Education</span>
+              <p>B.Tech, Computer Science &amp; Engineering (AI &amp; ML)<br><span class="dim">VNR Vignana Jyothi Institute of Engineering &amp; Technology · 2023 – 2027</span></p>
+              <p>Intermediate (MPC), 98.5%<br><span class="dim">Narayana Junior College, Hyderabad · 2021 – 2023</span></p>
+            </div>
+            <div class="reveal" style="--d:1">
+              <span class="label label--inv">Focus</span>
+              <p>Machine-learning research and applied AI<br><span class="dim">Scientific ML · computer vision · generative AI · biometrics · MERN</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="stats">
+        <li class="reveal"><strong><span data-count="9.18" data-decimals="2">9.18</span></strong><span class="label label--inv">CGPA / 10</span></li>
+        <li class="reveal" style="--d:1"><strong><span data-count="95">95</span>%</strong><span class="label label--inv">Crowd detection accuracy</span></li>
+        <li class="reveal" style="--d:2"><strong><span data-count="230">230</span><small>ms</small></strong><span class="label label--inv">Voice authentication, end to end</span></li>
+        <li class="reveal" style="--d:3"><strong><span data-count="100">100</span>+</strong><span class="label label--inv">Users on a platform I helped ship</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ EXPERIENCE — horizontal ============ -->
+    <section class="hx" id="experience" data-theme="light">
+      <div class="hx__stage">
+        <div class="hx__track" id="hxTrack">
+          <div class="hx__intro">
+            <span class="label">II — Experience</span>
+            <h2 class="h2" data-split>Research labs <em>&amp; real users.</em></h2>
+            <span class="label hx__hint">Scroll <b>→</b></span>
+          </div>
+
+          <article class="hx__panel">
+            <span class="hx__num" aria-hidden="true">26</span>
+            <div class="hx__body">
+              <div class="hx__when label">May 2026 — Aug 2026</div>
+              <h3>Research Intern · PINNs</h3>
+              <p class="hx__org">Kellogg School of Management, Northwestern University · Illinois</p>
+              <p class="hx__desc">Researched Physics-Informed Neural Networks under Prof. Achal Bassamboo: their mathematical foundations, network architectures and how physical constraints are built into training. Reviewed recent work in scientific machine learning to map the strengths and limits of current approaches, then tested how well PINNs carry over to domain-specific problems.</p>
+            </div>
+          </article>
+
+          <article class="hx__panel">
+            <span class="hx__num" aria-hidden="true">25</span>
+            <div class="hx__body">
+              <div class="hx__when label">Jan 2025 — Jul 2025</div>
+              <h3>Development Intern</h3>
+              <p class="hx__org">GearUp4 · VNR VJIET</p>
+              <p class="hx__desc">Built and deployed a full-stack MERN academic platform under Prof. Bhupesh Deka, now used by 100+ people. Worked across React.js, Node.js, Express.js and MongoDB, and automated the academic-content workflow to cut manual effort by about 40%.</p>
+            </div>
+          </article>
+
+          <article class="hx__panel">
+            <span class="hx__num" aria-hidden="true">∞</span>
+            <div class="hx__body">
+              <div class="hx__when label">Beyond code</div>
+              <h3>Service &amp; enterprise</h3>
+              <p class="hx__org">National Service Scheme (NSS) · VNR VJIET</p>
+              <p class="hx__desc">An active NSS member, organising literacy drives, medical camps and community-service initiatives. Also ran a college-event merchandise stall, returning over 300% on investment through planning and sales execution.</p>
+            </div>
+          </article>
+
+          <div class="hx__end" aria-hidden="true"><span>Next: the work</span><b>↓</b></div>
+        </div>
+        <div class="hx__bar" aria-hidden="true"><i id="hxBar"></i></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS — drum wheel ============ -->
+    <section class="works" id="work" data-theme="dark">
+      <div class="works__stage">
+        <div class="works__head">
+          <span class="label label--inv">III — Selected work</span>
+          <span class="label label--inv works__count"><b id="workIdx">01</b> / 05</span>
+        </div>
+
+        <div class="wheel" id="wheel" aria-label="Projects">
+          <div class="wheel__ring" id="wheelRing">
+            <button class="wheel__item" type="button">Crowd Surge</button>
+            <button class="wheel__item" type="button">VoicePay</button>
+            <button class="wheel__item" type="button">SympTwin AI</button>
+            <button class="wheel__item" type="button">Echoes in Motion</button>
+            <button class="wheel__item" type="button">GearUp4</button>
+          </div>
+        </div>
+
+        <div class="pds" id="pds">
+          <!-- 01 Crowd Surge -->
+          <article class="pd on">
+            <div class="pd__viz viz v-crowd" aria-hidden="true">
+              <div class="v-crowd__cam">
+                <div class="v-crowd__grid"><i style="--h:0.08;--k:0"></i><i style="--h:0.08;--k:1"></i><i style="--h:0.08;--k:2"></i><i style="--h:0.15;--k:3"></i><i style="--h:0.29;--k:4"></i><i style="--h:0.38;--k:5"></i><i style="--h:0.39;--k:6"></i><i style="--h:0.32;--k:7"></i><i style="--h:0.08;--k:8"></i><i style="--h:0.08;--k:9"></i><i style="--h:0.16;--k:10"></i><i style="--h:0.38;--k:11"></i><i style="--h:0.58;--k:12"></i><i style="--h:0.71;--k:13"></i><i style="--h:0.73;--k:14"></i><i style="--h:0.61;--k:15"></i><i style="--h:0.08;--k:16"></i><i style="--h:0.08;--k:17"></i><i style="--h:0.25;--k:18"></i><i style="--h:0.50;--k:19"></i><i style="--h:0.74;--k:20"></i><i style="--h:0.98;--k:21"></i><i style="--h:1.00;--k:22"></i><i style="--h:0.79;--k:23"></i><i style="--h:0.08;--k:24"></i><i style="--h:0.08;--k:25"></i><i style="--h:0.21;--k:26"></i><i style="--h:0.44;--k:27"></i><i style="--h:0.66;--k:28"></i><i style="--h:0.84;--k:29"></i><i style="--h:0.86;--k:30"></i><i style="--h:0.70;--k:31"></i><i style="--h:0.08;--k:32"></i><i style="--h:0.08;--k:33"></i><i style="--h:0.08;--k:34"></i><i style="--h:0.25;--k:35"></i><i style="--h:0.41;--k:36"></i><i style="--h:0.51;--k:37"></i><i style="--h:0.52;--k:38"></i><i style="--h:0.44;--k:39"></i></div>
+                <b class="v-crowd__p" style="--x:68%;--y:51%;--dx:1px;--dy:-3px;--k:0"></b><b class="v-crowd__p" style="--x:62%;--y:42%;--dx:-3px;--dy:0px;--k:1"></b><b class="v-crowd__p" style="--x:79%;--y:48%;--dx:-5px;--dy:-3px;--k:2"></b><b class="v-crowd__p" style="--x:55%;--y:55%;--dx:-1px;--dy:-3px;--k:3"></b><b class="v-crowd__p" style="--x:55%;--y:24%;--dx:2px;--dy:2px;--k:4"></b><b class="v-crowd__p" style="--x:73%;--y:44%;--dx:3px;--dy:-1px;--k:5"></b><b class="v-crowd__p" style="--x:73%;--y:50%;--dx:-2px;--dy:1px;--k:6"></b><b class="v-crowd__p" style="--x:75%;--y:59%;--dx:1px;--dy:-2px;--k:7"></b><b class="v-crowd__p" style="--x:67%;--y:44%;--dx:-3px;--dy:-2px;--k:8"></b><b class="v-crowd__p" style="--x:66%;--y:34%;--dx:-1px;--dy:2px;--k:9"></b><b class="v-crowd__p" style="--x:63%;--y:48%;--dx:3px;--dy:1px;--k:10"></b><b class="v-crowd__p" style="--x:70%;--y:61%;--dx:0px;--dy:0px;--k:11"></b><b class="v-crowd__p" style="--x:69%;--y:35%;--dx:4px;--dy:-1px;--k:12"></b><b class="v-crowd__p" style="--x:57%;--y:55%;--dx:-1px;--dy:-1px;--k:13"></b><b class="v-crowd__p" style="--x:9%;--y:64%;--dx:9px;--dy:-2px;--k:14"></b><b class="v-crowd__p" style="--x:83%;--y:36%;--dx:0px;--dy:2px;--k:15"></b><b class="v-crowd__p" style="--x:57%;--y:48%;--dx:4px;--dy:2px;--k:16"></b><b class="v-crowd__p" style="--x:48%;--y:64%;--dx:-1px;--dy:-1px;--k:17"></b><b class="v-crowd__p" style="--x:63%;--y:89%;--dx:3px;--dy:-7px;--k:18"></b><b class="v-crowd__p" style="--x:40%;--y:64%;--dx:0px;--dy:-3px;--k:19"></b><b class="v-crowd__p" style="--x:21%;--y:21%;--dx:2px;--dy:4px;--k:20"></b><b class="v-crowd__p" style="--x:17%;--y:31%;--dx:5px;--dy:4px;--k:21"></b><b class="v-crowd__p" style="--x:13%;--y:47%;--dx:7px;--dy:2px;--k:22"></b><b class="v-crowd__p" style="--x:78%;--y:79%;--dx:-3px;--dy:-5px;--k:23"></b><b class="v-crowd__p" style="--x:38%;--y:81%;--dx:8px;--dy:-6px;--k:24"></b><b class="v-crowd__p" style="--x:22%;--y:30%;--dx:4px;--dy:2px;--k:25"></b>
+                <b class="v-crowd__box c1"><span>person 0.96</span></b>
+                <b class="v-crowd__box c2"><span>person 0.94</span></b>
+                <span class="v-crowd__rec mono"><i></i>CAM 03 · live</span>
+                <span class="v-crowd__alert mono">Surge risk · zone C6 · T−30 s</span>
+              </div>
+              <span class="v-label v-label--l mono">YOLOv8 · density grid</span>
+              <span class="v-label v-label--r mono">FastAPI · early alert</span>
+            </div>
+            <div class="pd__body">
+              <span class="label label--inv">Computer vision · Public safety</span>
+              <h3>Crowd Surge Control <em>seeing a surge before it happens</em></h3>
+              <p>An AI crowd-monitoring system that reads live video, estimates crowd density and flags abnormal movement. YOLOv8 and OpenCV feed a predictive risk pipeline behind FastAPI, which marks surge-prone zones up to 30 seconds ahead and pushes automated alerts to a live React dashboard.</p>
+              <dl><div><dt>95<small>%</small></dt><dd>Detection accuracy</dd></div><div><dt>30<small>s</small></dt><dd>Early warning</dd></div></dl>
+              <div class="pd__foot"><ul class="chips"><li>Python</li><li>YOLOv8</li><li>OpenCV</li><li>FastAPI</li><li>React.js</li></ul>
+                <a class="link" href="https://github.com/badrinathnandaluri/AI_Event_Monitoring_Dashboard" target="_blank" rel="noopener" data-cursor="Open">View code <span>↗</span></a></div>
+            </div>
+          </article>
+
+          <!-- 02 VoicePay -->
+          <article class="pd">
+            <div class="pd__viz viz v-voice" aria-hidden="true">
+              <div class="v-voice__orb">
+                <i></i><i></i><i></i>
+                <span class="v-voice__face"><b></b><b></b><b></b><b></b></span>
+                <em><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></em>
+              </div>
+              <div class="v-voice__panel mono">
+                <div class="v-voice__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <ul class="v-voice__steps">
+                  <li style="--k:0"><span>speaker · x-vector</span><b>0.975</b></li>
+                  <li style="--k:1"><span>face · FaceNet fallback</span><b>standby</b></li>
+                  <li style="--k:2"><span>"pay ₹450 to Ravi"</span><b class="ok">authorised</b></li>
+                </ul>
+                <div class="v-voice__lat"><b>230</b><span>ms · no raw biometrics sent</span></div>
+              </div>
+              <span class="v-label v-label--l mono">Speaker verification</span>
+              <span class="v-label v-label--r mono">Privacy-first · on-device</span>
+            </div>
+            <div class="pd__body">
+              <span class="label label--inv">Biometrics · FinTech · Privacy</span>
+              <h3>VoicePay <em>pay with your voice, not a password</em></h3>
+              <p>A hands-free payment platform where speaker verification signs each transaction, with facial recognition as a fallback. x-vector and FaceNet handle identity, STT/TTS handle the conversation and an LLM adds financial analytics. It authenticates in real time without ever transmitting raw biometric data: 97.5% precision and 98.4% recall across 200+ trials.</p>
+              <dl><div><dt>97.5<small>%</small></dt><dd>Precision · 98.4% recall</dd></div><div><dt>230<small>ms</small></dt><dd>Real-time authentication</dd></div></dl>
+              <div class="pd__foot"><ul class="chips"><li>React.js</li><li>Node.js</li><li>MongoDB</li><li>TensorFlow.js</li><li>x-vector</li><li>FaceNet</li></ul></div>
+            </div>
+          </article>
+
+          <!-- 03 SympTwin -->
+          <article class="pd">
+            <div class="pd__viz viz v-twin" aria-hidden="true">
+              <div class="v-twin__fig">
+                <svg viewBox="0 0 120 220" class="v-twin__body">
+                  <circle cx="60" cy="30" r="18"/>
+                  <path d="M60 52c-22 0-34 12-34 30v52h14v74h40v-74h14V82c0-18-12-30-34-30z"/>
+                </svg>
+                <svg viewBox="0 0 120 220" class="v-twin__body v-twin__body--ghost">
+                  <circle cx="60" cy="30" r="18"/>
+                  <path d="M60 52c-22 0-34 12-34 30v52h14v74h40v-74h14V82c0-18-12-30-34-30z"/>
+                </svg>
+                <i class="v-twin__pulse" style="--x:50%;--y:16%"></i>
+                <i class="v-twin__pulse" style="--x:42%;--y:44%;--k:1"></i>
+                <i class="v-twin__pulse" style="--x:58%;--y:58%;--k:2"></i>
+              </div>
+              <div class="v-twin__panel mono">
+                <ul class="v-twin__tags">
+                  <li style="--k:0">heart rate ↑</li><li style="--k:1">fever · 2d</li><li style="--k:2">wearable sync</li>
+                </ul>
+                <svg class="v-twin__chart" viewBox="0 0 200 90" preserveAspectRatio="none">
+                  <path class="grid" d="M0 22h200M0 45h200M0 68h200"/>
+                  <path class="area" d="M0 78 L30 70 L60 72 L90 58 L120 50 L150 34 L180 30 L200 22 V90 H0Z"/>
+                  <path class="line" pathLength="100" d="M0 78 L30 70 L60 72 L90 58 L120 50 L150 34 L180 30 L200 22"/>
+                </svg>
+                <div class="v-twin__risk"><span>risk</span><b><i></i></b><em>RAG · explained</em></div>
+              </div>
+              <span class="v-label v-label--l mono">GenAI + RAG · vector DB</span>
+              <span class="v-label v-label--r mono">IoT · wearable streams</span>
+            </div>
+            <div class="pd__body">
+              <span class="label label--inv">Generative AI · Digital health</span>
+              <h3>SympTwin AI <em>a living digital twin for your health</em></h3>
+              <p>Builds a personalised health twin from real-time symptom inputs to predict risk early, improving diagnostic efficiency by about 40%. A Generative AI + RAG pipeline over a vector database explains symptoms in context, and a FastAPI backend on GCP processes IoT and wearable data streams.</p>
+              <dl><div><dt>~40<small>%</small></dt><dd>Diagnostic efficiency</dd></div><div><dt>RAG</dt><dd>Grounded explanations</dd></div></dl>
+              <div class="pd__foot"><ul class="chips"><li>Generative AI</li><li>RAG</li><li>Vector DB</li><li>React</li><li>FastAPI</li><li>GCP</li></ul>
+                <a class="link" href="https://github.com/ashrithmaddi/SympTwin-AI-clean" target="_blank" rel="noopener" data-cursor="Open">View code <span>↗</span></a></div>
+            </div>
+          </article>
+
+          <!-- 04 Echoes -->
+          <article class="pd">
+            <div class="pd__viz viz card__visual v-echo" aria-hidden="true">
+              <div class="v-echo__film"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ol class="v-echo__pipe mono"><li><b>Story</b><span>Gemini</span></li><li><b>Visuals</b><span>Stability</span></li><li><b>Voice</b><span>Cloud TTS</span></li><li><b>Edit</b><span>FFmpeg</span></li></ol>
+              <div class="v-echo__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="pd__body">
+              <span class="label label--inv">Generative AI · Culture</span>
+              <h3>Echoes in Motion <em>folk tales, animated</em></h3>
+              <p>A fully automated platform that turns regional folk stories into animations with culturally accurate visuals and regional voiceovers. Gemini processes the story, Stability AI generates the visuals, Google Cloud TTS voices it and FFmpeg stitches everything into a film.</p>
+              <dl><div><dt>4</dt><dd>Chained AI stages</dd></div><div><dt>Story → film</dt><dd>Fully automated</dd></div></dl>
+              <div class="pd__foot"><ul class="chips"><li>Gemini API</li><li>Stability API</li><li>Cloud TTS</li><li>FFmpeg</li><li>MERN</li></ul>
+                <a class="link" href="https://github.com/Niveditha2931/echoesinmotion" target="_blank" rel="noopener" data-cursor="Open">View code <span>↗</span></a></div>
+            </div>
+          </article>
+
+          <!-- 05 GearUp4 -->
+          <article class="pd">
+            <div class="pd__viz viz v-gear" aria-hidden="true">
+              <div class="v-gear__win">
+                <div class="v-gear__bar"><i></i><i></i><i></i><span class="mono">gear-ash.vercel.app</span></div>
+                <div class="v-gear__body">
+                  <aside class="v-gear__side"><b class="on"></b><b></b><b></b><b></b><b></b></aside>
+                  <div class="v-gear__main">
+                    <div class="v-gear__cards">
+                      <div class="v-gear__card" style="--k:0;--v:.86"><span class="mono">DSA · Unit 3</span><i></i></div>
+                      <div class="v-gear__card" style="--k:1;--v:.62"><span class="mono">DBMS · Lab 5</span><i></i></div>
+                      <div class="v-gear__card" style="--k:2;--v:.74"><span class="mono">OS · Notes</span><i></i></div>
+                      <div class="v-gear__card" style="--k:3;--v:.48"><span class="mono">CN · Quiz</span><i></i></div>
+                    </div>
+                    <div class="v-gear__auto mono"><span>auto-publish</span><b>−40% manual work</b></div>
+                  </div>
+                </div>
+              </div>
+              <span class="v-label v-label--l mono">MERN · 100+ users</span>
+              <span class="v-label v-label--r mono">Automated content flow</span>
+            </div>
+            <div class="pd__body">
+              <span class="label label--inv">Full-stack · EdTech</span>
+              <h3>GearUp4 <em>an academic platform, automated</em></h3>
+              <p>Built during the GearUp4 internship: a MERN academic platform deployed for 100+ users, with React on the front, Node.js and Express APIs behind it and MongoDB for storage. Automating the academic-content workflow cut manual effort by about 40%.</p>
+              <dl><div><dt>100<small>+</small></dt><dd>Active users</dd></div><div><dt>~40<small>%</small></dt><dd>Less manual work</dd></div></dl>
+              <div class="pd__foot"><ul class="chips"><li>React.js</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Vercel</li></ul>
+                <span class="pd__links"><a class="link" href="https://gear-ash.vercel.app" target="_blank" rel="noopener" data-cursor="Visit">Live site <span>↗</span></a><a class="link" href="https://github.com/ashrithmaddi/Gear_Ash" target="_blank" rel="noopener" data-cursor="Open">Code <span>↗</span></a></span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="works__nav">
+          <button type="button" id="workPrev" aria-label="Previous project" data-magnetic>↑</button>
+          <button type="button" id="workNext" aria-label="Next project" data-magnetic>↓</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLKIT ============ -->
+    <section class="skills" id="skills" data-theme="light">
+      <div class="band" aria-hidden="true">
+        <div class="band__row" data-dir="-1"><div><span>YOLOv8</span><i></i><span class="o">Deep Learning</span><i></i><span>OpenCV</span><i></i><span class="o">LangChain</span><i></i><span>Scikit-learn</span><i></i><span class="o">TensorFlow.js</span><i></i><span>YOLOv8</span><i></i><span class="o">Deep Learning</span><i></i><span>OpenCV</span><i></i><span class="o">LangChain</span><i></i><span>Scikit-learn</span><i></i><span class="o">TensorFlow.js</span><i></i></div></div>
+        <div class="band__row" data-dir="1"><div><span class="o">React</span><i></i><span>FastAPI</span><i></i><span class="o">MongoDB</span><i></i><span>GCP</span><i></i><span class="o">Docker</span><i></i><span>Python</span><i></i><span class="o">React</span><i></i><span>FastAPI</span><i></i><span class="o">MongoDB</span><i></i><span>GCP</span><i></i><span class="o">Docker</span><i></i><span>Python</span><i></i></div></div>
+      </div>
+
+      <div class="wrap">
+        <div class="sec-head"><span class="label">IV — Toolkit</span></div>
+        <h2 class="h2" data-split>What I reach for, <em>from equations to endpoints.</em></h2>
+        <div class="grid6">
+          <div class="cell reveal"><span class="label">AI · ML</span><ul><li>Machine learning</li><li>Deep learning</li><li>Neural networks · PINNs</li><li>Generative AI · RAG</li><li>LangChain</li><li>Scikit-learn</li></ul></div>
+          <div class="cell reveal" style="--d:1"><span class="label">Vision · Data</span><ul><li>OpenCV</li><li>YOLOv8</li><li>NumPy · Pandas</li><li>Vector databases</li><li>TensorFlow.js</li></ul></div>
+          <div class="cell reveal" style="--d:2"><span class="label">Languages</span><ul><li>Python</li><li>Java</li><li>C</li><li>JavaScript</li><li>SQL</li></ul></div>
+          <div class="cell reveal"><span class="label">Web · Backend</span><ul><li>React.js</li><li>Node.js · Express</li><li>FastAPI</li><li>REST APIs</li><li>HTML · CSS</li></ul></div>
+          <div class="cell reveal" style="--d:1"><span class="label">Cloud · Databases</span><ul><li>MongoDB</li><li>Google Cloud (GCP)</li><li>Docker</li><li>Vercel</li></ul></div>
+          <div class="cell reveal" style="--d:2"><span class="label">Tools · APIs</span><ul><li>Git · GitHub</li><li>Gemini API</li><li>Stability API</li><li>Google Cloud TTS</li><li>FFmpeg</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HONOURS ============ -->
+    <section class="beyond" id="beyond" data-theme="light">
+      <div class="wrap">
+        <div class="sec-head"><span class="label">V — Honours &amp; service</span></div>
+        <h2 class="h2" data-split>Certificates, service <em>&amp; small wins.</em></h2>
+
+        <ul class="rows">
+          <li class="row reveal"><span class="row__k label">Elite + Gold</span><span class="row__t">NPTEL · Introduction to IoT</span><span class="row__d">Top 5% nationally, scoring 91%</span></li>
+          <li class="row reveal"><span class="row__k label">Elite</span><span class="row__t">NPTEL · Machine Learning &amp; Deep Learning</span><span class="row__d">Fundamentals, elite certification</span></li>
+          <li class="row reveal"><span class="row__k label">Qualified</span><span class="row__t">AI Hack Days, Spark Camp</span><span class="row__d">Hackathon held at Tech Mahindra</span></li>
+          <li class="row reveal"><span class="row__k label">Research</span><span class="row__t">Kellogg, Northwestern University</span><span class="row__d">PINNs research internship, summer 2026</span></li>
+          <li class="row reveal"><span class="row__k label">Service</span><span class="row__t">National Service Scheme (NSS)</span><span class="row__d">Literacy drives, medical camps, community service</span></li>
+          <li class="row reveal"><span class="row__k label">Enterprise</span><span class="row__t">Merchandise stall, 300% ROI</span><span class="row__d">College-event stall, planned and run end to end</span></li>
+        </ul>
+
+        <div class="trio">
+          <div class="reveal"><span class="label">Core CS</span><ul><li>Data structures &amp; algorithms</li><li>Object-oriented programming</li><li>Database management systems</li><li>Operating systems · Computer networks</li></ul></div>
+          <div class="reveal" style="--d:1"><span class="label">Research interests</span><ul><li>Physics-informed neural networks</li><li>Scientific machine learning</li><li>Computer vision for public safety</li><li>Privacy-first biometric AI</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" data-theme="dark">
+      <canvas class="swirl" id="swirlContact" aria-hidden="true"></canvas>
+      <div class="contact__shade"></div>
+      <div class="contact__in">
+        <span class="label label--inv"><i class="live"></i>Open to AI/ML research &amp; engineering roles · Class of 2027</span>
+        <h2 class="contact__title" aria-label="Let's talk"><span class="chars">Let's</span> <span class="chars">talk</span></h2>
+        <a class="contact__mail" href="mailto:maddiashrith@gmail.com" data-magnetic data-cursor="Write"><span>maddiashrith@gmail.com</span><b>↗</b></a>
+        <div class="contact__row">
+          <a href="tel:+918688338521"><span class="label label--inv">Phone</span>+91 86883 38521</a>
+          <a href="https://www.linkedin.com/in/ashrith-maddi" target="_blank" rel="noopener"><span class="label label--inv">LinkedIn</span>ashrith-maddi ↗</a>
+          <a href="https://github.com/ashrithmaddi" target="_blank" rel="noopener"><span class="label label--inv">GitHub</span>ashrithmaddi ↗</a>
+        </div>
+        <footer class="footer label label--inv">
+          <span>© <span id="year">2026</span> Maddi Ashrith</span>
+          <span>Hyderabad <span id="clock">--:--</span> IST</span>
+          <a href="#top">Back to top ↑</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
